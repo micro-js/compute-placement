@@ -21,9 +21,9 @@ var computePlacement = require('@f/compute-placement')
 var applyStyles = require('@f/apply-styles')
 var elementRect = require('@f/element-rect')
 
-function positionElement (node, placement, near, relative, space) {
+function positionElement (node, placement, near, space) {
   var dims = getRect(node)
-  var nearRect = getRect(near, relative)
+  var nearRect = getRect(near, true)
   var pos = computePlacement(placement, dims, nearRect, space)
 
   applyStyles(node, pos)
