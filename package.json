@@ -2,7 +2,7 @@
   "name": "@f/compute-placement",
   "description": "Compute the top/left offset of an element to position it near another element",
   "repository": "git://github.com/micro-js/compute-placement.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
