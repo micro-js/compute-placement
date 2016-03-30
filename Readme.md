@@ -37,7 +37,9 @@ function positionElement (node, placement, near, space) {
 - `placement` - One of `top/right/bottom/left`. Specifies where you want your node to go relative to the rect specified by `nearRect`.
 - `nodeDims` - An object of the form `{width, height}` containing the width and height of the node you want to position.
 - `nearRect` - The rect (as returned by `getBoundingClientRect` or something like [element-rect](https://github.com/micro-js/element-rect)). Note that if the node you are positioning is in the same container as your `near` element, you will want the `top/left` offsets to be relative to that container. [element-rect](https://github.com/micro-js/element-rect) will do that for you if you pass `true` as the second parameter. Otherwise everything will be absolute.
-- `space` - Optional. Defaults to 0. The amount of padding in pixels you want to add to the position.
+- `options` - Optional. Object containing:
+    * `space` - Defaults to 0. The amount of padding in pixels you want to add to the position.
+    * `relative` - Defaults to false. Whether or not the container is relative to its parent.
 
 **Returns:** An object of the form `{top, left}` specified as numbers (not `<nn>px` strings), in pixels.
 
